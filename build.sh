@@ -107,11 +107,11 @@ check_docker_compose_version(){
 }
 
 get_config_files(){
-	ls isardvdi*.cfg
+	ls vdi*.cfg
 }
 
 get_config_name(){
-	echo "$1" | sed -n 's/^isardvdi\.\?\(.*\)\.cfg$/\1/p'
+	echo "$1" | sed -n 's/^vdi\.\?\(.*\)\.cfg$/\1/p'
 }
 
 is_official_build(){
